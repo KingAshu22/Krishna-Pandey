@@ -1,121 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Krishna Pandey Live</title>
 
-<head>
-	<!-- Meta Data -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Krishna Pandey Live</title>
+    <!-- Fav Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/fav-icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/fav-icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/fav-icons/favicon-16x16.png"
+    />
+    <meta name="theme-color" content="#e43a90" />
 
-	<!-- Fav Icon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav-icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav-icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav-icons/favicon-16x16.png">
-	<meta name="theme-color" content="#e43a90">
+    <!-- Dependency Styles -->
+    <link
+      rel="stylesheet"
+      href="dependencies/bootstrap/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/intro/css/stylesheet.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/swiper/swiper.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/font-awesome/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/wow/css/animate.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/magnific-popup/magnific-popup.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/jquery-ui/css/jquery-ui.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/slick-carousel/css/slick.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/colornip/css/colornip.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="dependencies/css-loader/css/css-loader.css"
+      type="text/css"
+    />
+    <script src="/assets/js/lite-youtube-embed.js"></script>
 
-	<!-- Dependency Styles -->
-	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/intro/css/stylesheet.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/swiper/swiper.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/magnific-popup/magnific-popup.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/jquery-ui/css/jquery-ui.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/slick-carousel/css/slick.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/colornip/css/colornip.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/css-loader/css/css-loader.css" type="text/css">
-	<script src="/assets/js/lite-youtube-embed.js"></script>
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/woocommerce.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <link
+      id="theme"
+      rel="stylesheet"
+      href="assets/css/theme-color/theme-default.css"
+      type="text/css"
+    />
+  </head>
 
-	<!-- Site Stylesheet -->
-	<link rel="stylesheet" href="assets/css/woocommerce.css" type="text/css">
-	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
-	<link id="theme" rel="stylesheet" href="assets/css/theme-color/theme-default.css" type="text/css">
-
-
-
-
-</head>
-
-<!-- Onload popup -->
-<div id="myModal" class="modal fade onload_modal" role="dialog">
-   <div class="modal-dialog">
+  <!-- Onload popup -->
+  <div id="myModal" class="modal fade onload_modal" role="dialog">
+    <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
-         <!-- <div class="modal-header">
+        <!-- <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div> -->
-         <div class="modal-header" style="padding:15px 20px; background: #f60038;">
-            <h5 style="color:#fff; margin: 0;"><span class="fa fa-phone" style="margin-right: 5px;"></span> Request Callback</h5>
-            <button type="button" data-dismiss="modal" style="position: absolute; right: 20px; top: 15px; background: no-repeat; border: 0px; font-size: 35px; margin: 0px; padding: 0px; color: #fff;">&times;</button>
-         </div>
-        <div class="modal-body" style="padding:20px 30px;">
-            <form method="post" action="https://form.digitalsochmedia.com/thanku.php">
-               <div class="form-group" style="margin-bottom: 0px;">
-                  <input type="text" name="name"  class="form-control" placeholder="Enter Your Name" style="margin-bottom: 15px;"/>
-                  <input type="text" class="form-control" name="mobile" pattern="[0-9]{10,10}" autocomplete="off"  maxlength="10" id="extra7" onKeyPress="return isNumber(event)" placeholder="Enter Mobile Number" aria-describedby="basic-addon1" style="border: 2px solid #f60038; margin-bottom: 15px;">
-                  <input type="text" class="form-control" name="msg" placeholder="Enter Your Message"  style="margin-bottom: 15px;">
-               </div>
-               <input type="hidden" name="clientMailID"  value="info@bookmysinger.com">
-               <input name="website" type="hidden" value="krishnapandeylive.com/thanku.html" />            
-               <input name="loginID" type="hidden" value="1082" />
-               <input name="orderID" type="hidden" value="1204" />
-               <button type="submit" class="btn btn-block" style="background: #f60038; color:#fff; border: 0px;"><span class="fa fa-paper-plane"></span> Submit</button>
-            </form>
+        <div
+          class="modal-header"
+          style="padding: 15px 20px; background: #f60038"
+        >
+          <h5 style="color: #fff; margin: 0">
+            <span class="fa fa-phone" style="margin-right: 5px"></span> Request
+            Callback
+          </h5>
+          <button
+            type="button"
+            data-dismiss="modal"
+            style="
+              position: absolute;
+              right: 20px;
+              top: 15px;
+              background: no-repeat;
+              border: 0px;
+              font-size: 35px;
+              margin: 0px;
+              padding: 0px;
+              color: #fff;
+            "
+          >
+            &times;
+          </button>
         </div>
-         <div class="modal-footer text-center">
-            <p style="text-align: center !important; margin-right: auto; margin-left: auto;">Our team will contact you soon.</p>
-         </div>
+        <div class="modal-body" style="padding: 20px 30px">
+          <form
+            method="post"
+            action="https://form.digitalsochmedia.com/thanku.php"
+          >
+            <div class="form-group" style="margin-bottom: 0px">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Enter Your Name"
+                style="margin-bottom: 15px"
+              />
+              <input
+                type="text"
+                class="form-control"
+                name="mobile"
+                pattern="[0-9]{10,10}"
+                autocomplete="off"
+                maxlength="10"
+                id="extra7"
+                onKeyPress="return isNumber(event)"
+                placeholder="Enter Mobile Number"
+                aria-describedby="basic-addon1"
+                style="border: 2px solid #f60038; margin-bottom: 15px"
+              />
+              <input
+                type="text"
+                class="form-control"
+                name="msg"
+                placeholder="Enter Your Message"
+                style="margin-bottom: 15px"
+              />
+            </div>
+            <input
+              type="hidden"
+              name="clientMailID"
+              value="info@bookmysinger.com"
+            />
+            <input
+              name="website"
+              type="hidden"
+              value="krishnapandeylive.com/thanku.html"
+            />
+            <input name="loginID" type="hidden" value="1082" />
+            <input name="orderID" type="hidden" value="1204" />
+            <button
+              type="submit"
+              class="btn btn-block"
+              style="background: #f60038; color: #fff; border: 0px"
+            >
+              <span class="fa fa-paper-plane"></span> Submit
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+          <p
+            style="
+              text-align: center !important;
+              margin-right: auto;
+              margin-left: auto;
+            "
+          >
+            Our team will contact you soon.
+          </p>
+        </div>
       </div>
-   </div>
-</div>
+    </div>
+  </div>
 
-<body id="home-version-1" class="home-version-1" data-style="default">
+  <body id="home-version-1" class="home-version-1" data-style="default">
+    <!-- <div class="loader loader-bar-ping-pong is-active"></div> -->
+    <div id="site">
+      <!--=========================-->
+      <!--=        Navbar         =-->
+      <!--=========================-->
+      <header class="header header-magic-line">
+        <div class="header-inner">
+          <div class="tim-container clearfix">
+            <div class="header-magic-line-inner clearfix">
+              <div id="site-logo" class="float-left">
+                <a href="index.html" class="logo-main">
+                  <img src="assets/img/logo_5.png" alt="logo" loading="lazy" />
+                </a>
 
-	<!-- <div class="loader loader-bar-ping-pong is-active"></div> -->
-	<div id="site">
+                <a href="index.html" class="logo-stickky">
+                  <img src="assets/img/logo_5.png" alt="logo" loading="lazy" />
+                </a>
+              </div>
 
-
-		<!-- <div class="Switcher">
-			<button id="Switcher__control" class="Switcher__control"><i class="tim-cogwheel"></i></button>
-			<h5>Change Color</h5>
-			<ul id="colors" data-dir="assets/css/theme-color/">
-				<li data-scheme="theme-default" data-color="#e43a90"></li>
-				<li data-scheme="theme-river" data-color="#242e8a"></li>
-				<li data-scheme="theme-alizarin" data-color="#673AB7"></li>
-				<li data-scheme="theme-emerald" data-color="#2196f3"></li>
-				<li data-scheme="theme-seven" data-color="#7940d7"></li>
-				<li data-scheme="theme-carrot" data-color="#135ee4"></li>
-				<li data-scheme="theme-amethyst" data-color="#07e6a5"></li>
-		
-		
-				<li data-scheme="theme-six" data-color="#d8c600"></li>
-		
-				<li data-scheme="theme-eight" data-color="#e8300c"></li>
-				<li data-scheme="theme-nine" data-color="#26cc74"></li>
-			</ul>
-		</div> -->
-
-
-
-		<!--=========================-->
-		<!--=        Navbar         =-->
-		<!--=========================-->
-		<header class="header header-magic-line">
-			<div class="header-inner">
-				<div class="tim-container clearfix">
-					<div class="header-magic-line-inner clearfix">
-						<div id="site-logo" class="float-left">
-							<a href="index.html" class="logo-main">
-								<img src="assets/img/logo_5.png" alt="logo" loading="lazy">
-							</a>
-
-							<a href="index.html" class="logo-stickky">
-								<img src="assets/img/logo_5.png" alt="logo" loading="lazy">
-							</a>
-						</div>
-
-						<!-- <div class="nav">
+              <!-- <div class="nav">
 							<ul class="group" id="header-menu-magic-line">
 								<li class="menu-item-has-children ">
 									<a href="index.html">Home </a>
@@ -166,16 +266,16 @@
 								</li>
 							</ul>
 						</div> -->
-						<!-- /.nav -->
-					</div>
-				</div>
-				<!-- /.tim-container -->
-			</div>
-			<!-- /.header-inner -->
-		</header>
-		<!-- /#header -->
+              <!-- /.nav -->
+            </div>
+          </div>
+          <!-- /.tim-container -->
+        </div>
+        <!-- /.header-inner -->
+      </header>
+      <!-- /#header -->
 
-		<!-- <div class="offset-menu-two">
+      <!-- <div class="offset-menu-two">
 			<a href="#" class="offset-closer"><img src="assets/img/offset-cross2.png" alt=""></a>
 
 			<div class="footer-about">
@@ -213,60 +313,59 @@
 			</div>
 		</div> -->
 
+      <!--=============================-->
+      <!--=        Mobile Nav         =-->
+      <!--=============================-->
+      <header id="mobile-nav-wrap">
+        <div class="mob-header-inner d-flex justify-content-between">
+          <div id="mobile-logo" class="d-flex justify-content-start">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="Site Logo" loading="lazy"
+            /></a>
+          </div>
 
+          <div id="nav-toggle" class="nav-toggle hidden-md">
+            <div class="toggle-inner">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- /.mob-header-inner -->
+      </header>
+      <!-- /#mobile-header -->
 
-		<!--=============================-->
-		<!--=        Mobile Nav         =-->
-		<!--=============================-->
-		<header id="mobile-nav-wrap">
-			<div class="mob-header-inner d-flex justify-content-between">
-				<div id="mobile-logo" class="d-flex justify-content-start">
-					<a href="index.html"><img src="assets/img/logo.png" alt="Site Logo" loading="lazy"></a>
-				</div>
+      <div class="mobile-menu-inner">
+        <div class="mobile-nav-top-wrap">
+          <div class="mob-header-inner clearfix">
+            <div class="d-flex justify-content-start mobile-logo">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="Site Logo" loading="lazy" />
+              </a>
+            </div>
 
-				<div id="nav-toggle" class="nav-toggle hidden-md">
-					<div class="toggle-inner">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-			</div>
-			<!-- /.mob-header-inner -->
-		</header>
-		<!-- /#mobile-header -->
+            <div class="close-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <!-- /.mob-header-inner -->
 
-		<div class="mobile-menu-inner">
+          <div class="close-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <!-- /.mobile-nav-top-wrap -->
 
-			<div class="mobile-nav-top-wrap">
-				<div class="mob-header-inner clearfix">
-					<div class="d-flex justify-content-start mobile-logo">
-						<a href="index.html">
-							<img src="assets/img/logo.png" alt="Site Logo" loading="lazy">
-						</a>
-					</div>
-
-					<div class="close-menu">
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</div>
-				</div>
-				<!-- /.mob-header-inner -->
-
-				<div class="close-menu">
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</div>
-			</div>
-			<!-- /.mobile-nav-top-wrap -->
-
-			<nav id="accordian">
-				<ul class="accordion-menu">
-					<li>
-						<a href="/" class="dropdownlink">Home</a>
-					</li>
-					<!-- <li>
+        <nav id="accordian">
+          <ul class="accordion-menu">
+            <li>
+              <a href="/" class="dropdownlink">Home</a>
+            </li>
+            <!-- <li>
 						<a href="#0" class="dropdownlink">Artist</a>
 						<ul class="submenuItems">
 							<li><a href="artist.html">Artist</a></li>
@@ -307,76 +406,97 @@
 							<li><a href="shop-single.html">Shop Details</a></li>
 						</ul>
 					</li> -->
-				</ul>
-			</nav>
-		</div>
-		<!-- /.mobile-menu-inner -->
+          </ul>
+        </nav>
+      </div>
+      <!-- /.mobile-menu-inner -->
 
+      <!--============================-->
+      <!--=        	Banner         =-->
+      <!--============================-->
+      <section
+        class="banner-five"
+        data-bg-image="media/background/bg5.jpg"
+        loading="lazy"
+      >
+        <div class="tim-container">
+          <div id="para" class="paralax">
+            <div id="paralax-1" class="scene">
+              <div data-depth="-0.50">
+                <img
+                  src="media/background/mouse-move.png"
+                  alt="Krishna Pandey"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="baneer-five-content">
+            <div class="content sp-container">
+              <div class="sp-content">
+                <div class="sp-globe"></div>
+                <h2 class="frame-1" style="font-size: 600%">
+                  Krishna Pandey Live
+                </h2>
+                <h2 class="frame-2" style="font-size: 600%">
+                  Krishna Pandey Live
+                </h2>
+                <h2 class="frame-3" style="font-size: 600%">
+                  Krishna Pandey Live
+                </h2>
+                <h2 class="frame-4" style="font-size: 600%">
+                  Krishna Pandey Live
+                </h2>
+              </div>
+              <h3>Live Singer | Band |</h3>
+            </div>
+          </div>
+          <!-- /.tim-container -->
+        </div>
+        <!-- /.tim-container -->
 
+        <div class="smoke-wrqpper">
+          <canvas id="canvas"></canvas>
+        </div>
+      </section>
+      <!-- /#page-header -->
 
-		<!--============================-->
-		<!--=        	Banner         =-->
-		<!--============================-->
-		<section class="banner-five" data-bg-image="media/background/bg5.jpg" loading="lazy">
-			<div class="tim-container">
-				<div id="para" class="paralax">
-					<div id="paralax-1" class="scene">
-						<div data-depth="-0.50"><img src="media/background/mouse-move.png" alt="Krishna Pandey" loading="lazy"></div>
-					</div>
-				</div>
-				<div class="baneer-five-content">
-					<div class="content sp-container">
-						<div class="sp-content">
-							<div class="sp-globe"></div>
-							<h2 class="frame-1" style="font-size: 600%;">Krishna Pandey Live</h2>
-							<h2 class="frame-2" style="font-size: 600%;">Krishna Pandey Live</h2>
-							<h2 class="frame-3" style="font-size: 600%;">Krishna Pandey Live</h2>
-							<h2 class="frame-4" style="font-size: 600%;">Krishna Pandey Live</h2>
+      <section class="header_player style-fullwidth">
+        <!-- Audio Player -->
+        <div class="player-container-fullwidth">
+          <iframe
+            style="border-radius: 12px; margin-bottom: -2%"
+            src="https://open.spotify.com/embed/artist/6nI6eyIKrFvU02ptT6eKSq?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
 
-						</div>
-						<h3>Live Singer | Band | </h3>
-					</div>
-				</div>
-				<!-- /.tim-container -->
-			</div>
-			<!-- /.tim-container -->
-
-			<div class="smoke-wrqpper">
-				<canvas id="canvas"></canvas>
-			</div>
-
-		</section>
-		<!-- /#page-header -->
-
-
-
-		<section class="header_player style-fullwidth">
-
-			<!-- Audio Player -->
-			<div class="player-container-fullwidth">
-
-				<!-- /.current-tracks -->
-				<div id="header_player" class="jp-audio" role="application" aria-label="media player">
+          <!-- /.current-tracks -->
+          <!-- <div id="header_player" class="jp-audio" role="application" aria-label="media player">
 					<div class="jp-type-playlist clearfix">
 						<div class="jp-gui jp-interface">
 							<div class="jp-controls">
 								<button class="jp-play" tabindex="0"><i class="fa fa-play"></i></button>
-							</div>
-							<!-- Display the track inside player -->
+							</div> -->
+          <!-- Display the track inside player -->
 
-							<div class="current-tracks">
+          <!-- <div class="current-tracks">
 								<div id="main_player" class="jp-jplayer">
 
 								</div>
 								<div id="nowPlaying">
 									<h3 class="track-name"></h3>
 									<span class="artist-name"></span>
-								</div>
-								<!-- #nowPlaying -->
-							</div>
-							<!-- /.current-tracks -->
+								</div> -->
+          <!-- #nowPlaying -->
+          <!-- </div> -->
+          <!-- /.current-tracks -->
 
-							<div class="jp-progress">
+          <!-- <div class="jp-progress">
 								<div class="jp-seek-bar">
 									<div class="jp-play-bar"></div>
 								</div>
@@ -391,47 +511,513 @@
 									<div class="jp-volume-bar-value"></div>
 								</div>
 
-							</div>
-							<!-- /.vel-wrap -->
+							</div> -->
+          <!-- /.vel-wrap -->
 
-							<button id="playlist-toggle" class=""><i class="fa fa-list"></i></button>
+          <!-- <button id="playlist-toggle" class=""><i class="fa fa-list"></i></button> -->
 
-							<!-- Playlist -->
-							<div class="jp-playlist">
+          <!-- Playlist -->
+          <!-- <div class="jp-playlist">
 								<ul>
 									<li></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
+				</div> -->
+        </div>
+      </section>
 
-		<!-- <div id="whatsapp-chat">
-			<a href="https://api.whatsapp.com/send?phone=919870062178" target="_blank" rel="noopener noreferrer">
-				<img src="media/album/whatsapp.png" alt="Whatsapp" class="whatsappImg" />
-			</a>
-		</div> -->
-		<div class="call-button">
-			<a href="tel:+91 9355259600">
-				<img src="media/album/telephone.png" alt="Call" loading="lazy"/>
-			</a>
-		</div>
+      <div class="call-button">
+        <a href="tel:+91 9355259600">
+          <img src="media/album/telephone.png" alt="Call" loading="lazy" />
+        </a>
+      </div>
 
+      <!--==============================-->
+      <!--=        	Videos           =-->
+      <!--==============================-->
+      <section class="section-padding-two artist-lineup">
+        <div style="margin-top: 15%" class="tim-container clearfix">
+          <div class="row">
+            <div class="section-title style-four">
+              <h2>Videos</h2>
+              <p>
+                Videos of Krishna Pandey Live Band of some of the previous
+                events and shows.
+              </p>
+            </div>
+          </div>
 
-		<!--==============================-->
-		<!--=        	Videos           =-->
-		<!--==============================-->
-		<section class="section-padding-two artist-lineup">
-			<div class="tim-container clearfix">
+          <div class="container mt-5">
+            <ul class="nav nav-tabs" id="myTabs">
+              <li class="nav-item">
+                <a
+				style="color: #AC0838;"
+                  class="nav-link active"
+                  id="all-tab"
+                  data-toggle="tab"
+                  href="#all"
+                  >All</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+				style="color: #AC0838;"
+                  class="nav-link"
+                  id="original-tab"
+                  data-toggle="tab"
+                  href="#original"
+                  >Originals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+				style="color: #AC0838;"
+                  class="nav-link"
+                  id="cover-tab"
+                  data-toggle="tab"
+                  href="#cover"
+                  >Cover</a
+                >
+              </li>
+              <li class="nav-item">
+                <a  style="color: #AC0838;" class="nav-link" id="dj-tab" data-toggle="tab" href="#dj"
+                  >DJ Based Live Band</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+				style="color: #AC0838;"
+                  class="nav-link"
+                  id="wedding-tab"
+                  data-toggle="tab"
+                  href="#wedding"
+                  >Wedding</a
+                >
+              </li>
+              <li class="nav-item">
+                <a style="color: #AC0838;"
+                  class="nav-link"
+                  id="corporate-tab"
+                  data-toggle="tab"
+                  href="#corporate"
+                  >Corporate</a
+                >
+              </li>
+              <li class="nav-item">
+                <a style="color: #AC0838;"
+                  class="nav-link"
+                  id="testimonial-tab"
+                  data-toggle="tab"
+                  href="#testimonial"
+                  >Testimonial</a
+                >
+              </li>
+            </ul>
+
+            <div class="tab-content mt-2">
+              <div class="tab-pane fade show active" id="all">
+                <h2 style="color: #AC0838;">Original Songs</h2>
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <div class="video-player">
+                      <div
+                        width="560"
+                        height="315"
+                        class="youtube-player"
+                        videosource="youtube"
+                        data-id="kDnxWOxr3wI"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <h2 style="color: #AC0838;">Cover Songs</h2>
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <div class="video-player">
+                      <div
+                        width="560"
+                        height="315"
+                        class="youtube-player"
+                        videosource="youtube"
+                        data-id="qUxT_bwBXik"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="video-player">
+                      <div
+                        width="560"
+                        height="315"
+                        class="youtube-player"
+                        videosource="youtube"
+                        data-id="OQXqdQPCNUg"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+				<h2 style="color: #AC0838;">DJ Based Live Band</h2>
 				<div class="row">
-					<div class="section-title style-four">
-						<h2>Videos</h2>
-						<p>Videos of Krishna Pandey Live Band of some of the previous events and shows.</p>
-					</div>
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="oG6FQaL2vmQ"
+                    ></div>
+                  </div>
+                </div>
 				</div>
-				<div class="section-title style-four">
+				<h2 style="color: #AC0838;">Wedding</h2>
+				<div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="DYg9W2-Q9ic"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="mgsafZ0yIJ4"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="2q85R1EAOLg"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="DRrIobGaW6Q"
+                    ></div>
+                  </div>
+                </div>
+				</div>
+				<h2 style="color: #AC0838;">Corporate</h2>
+				<div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="VeEj_vWOQ5E"
+                    ></div>
+                  </div>
+                </div>
+				</div>
+				<h2 style="color: #AC0838;">Testimonial</h2>
+				<div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="w4sG8KULXf0"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="C0RRiIXSRUs"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="mfOx5pFbXQQ"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="fuZKlREuxPM"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="aXqlCJwouxU"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="MUztzWFS03Y"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="original">
+              <div class="row">
+                <!-- Add corporate event videos here -->
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="kDnxWOxr3wI"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="cover">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="qUxT_bwBXik"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="OQXqdQPCNUg"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="dj">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="oG6FQaL2vmQ"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="wedding">
+              <div class="row">
+                <!-- Add wedding videos here -->
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="DYg9W2-Q9ic"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="mgsafZ0yIJ4"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="2q85R1EAOLg"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="DRrIobGaW6Q"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="corporate">
+              <div class="row">
+                <!-- Add corporate event videos here -->
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="VeEj_vWOQ5E"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="testimonial">
+              <div class="row">
+                <!-- Add wedding videos here -->
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="w4sG8KULXf0"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="C0RRiIXSRUs"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="mfOx5pFbXQQ"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="fuZKlREuxPM"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="aXqlCJwouxU"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <div class="video-player">
+                    <div
+                      width="560"
+                      height="315"
+                      class="youtube-player"
+                      videosource="youtube"
+                      data-id="MUztzWFS03Y"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="section-title style-four">
 					<p>Original Song</p>
 					<div class="video-player">
 						<div class="youtube-player" videosource="youtube" data-id="kDnxWOxr3wI"></div>
@@ -453,8 +1039,7 @@
 				<div class="section-title style-four">
 					<p>Wedding</p>
 					<div class="video-player">
-						<div width="560" height="315" class="youtube-player" videosource="youtube" data-id="DYg9W2-Q9ic"></div>
-						<div width="560" height="315" class="youtube-player" videosource="youtube" data-id="mgsafZ0yIJ4"></div>
+						
 						<div width="560" height="315" class="youtube-player" videosource="youtube" data-id="2q85R1EAOLg"></div>
 						<div width="560" height="315" class="youtube-player" videosource="youtube" data-id="DRrIobGaW6Q"></div>
 						<div width="560" height="315" class="youtube-player" videosource="youtube" data-id="DRrIobGaW6Q"></div>
@@ -477,755 +1062,881 @@
 							<div class="youtube-player" videosource="youtube" data-id="MUztzWFS03Y"></div>
 						</div>
 					</div>
-				</div>
-				<!-- /.tim-container -->
-		</section>
-
-
-		<!--==============================-->
-		<!--=        	Artist lineup         =-->
-		<!--==============================-->
-		<section class="section-padding-two artist-lineup">
-			<div class="tim-container clearfix">
-				<div class="row">
-					<div class="section-title style-four">
-						<h2>ARTIST LINEUP</h2>
-						<p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
-							alteration in some injected humour.</p>
-					</div>
-				</div>
-				<div class="swiper-container row"
-					data-swiper-config='{ "loop": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": "5000", "slidesPerView": 6, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "1300": { "slidesPerView": 4 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 1 }}}'>
-					<ul class="artist-line-wrapper swiper-wrapper">
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a1.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Krishna Pandey</h6>
-								<p>Band: Singer</p>
-							</div>
-						</li>
-
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a2.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Kunal Rajbhatt</h6>
-								<p>Band: Guitarist</p>
-							</div>
-						</li>
-
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a3.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Pratyaksh Rajbhatt</h6>
-								<p>Band: Percussion</p>
-							</div>
-						</li>
-
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a4.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Shubham</h6>
-								<p>Band: DJ Player</p>
-							</div>
-						</li>
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a5.png" alt="" loading="lazy" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Aditya</h6>
-								<p>Band: Keyboard</p>
-							</div>
-						</li>
-
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a2.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Kunal Rajbhatt</h6>
-								<p>Band: Guitarist</p>
-							</div>
-						</li>
-
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a3.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Pratyaksh Rajbhatt</h6>
-								<p>Band: Percussion</p>
-							</div>
-						</li>
-
-						<li class="artist-single clearfix swiper-slide">
-							<img src="media/artist/a4.png" alt="" loading="lazy">
-							<div class="artist-single-content">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								</ul>
-								<h6>Shubham</h6>
-								<p>Band: DJ Player</p>
-							</div>
-						</li>
-					</ul>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-				</div>
-			</div>
-			<!-- /.tim-container -->
-		</section>
-		<!-- /#about -->
-
-
-		<!--==============================-->
-		<!--=        	Latest release         =-->
-		<!--==============================-->
-		<section class="section-padding latest-relese">
-			<div class="container">
-				<div class="row">
-					<div class="section-title style-four">
-						<h2>LATEST RELEASE</h2>
-					</div>
-					<div class="d-flex justify-content-center">
-						<div class="col-xl-10" id="moving-player">
-							<div class="row">
-								<div class="col-sm-8 col-md-9 col-lg-8">
-									<div class="latest-album-left">
-										<div class="cover-img">
-											<img src="media/album/cover.jpeg" alt="" loading="lazy">
-										</div>
-										<div class="albun-details">
-											<h6>ALBUM INFO</h6>
-											<p>Most happening band Krishna Pandey Live recently has released their debut
-												album called
-												<span>“PHIR KITTHE”</span>. Officialy the album released on Apr 25, 2023
-												in <span>Book My Singer</span> Studio, Mumbai.
-											</p>
-											<p>The Lineup: Krishna Pandey & Kunal Rajbhatt (Composition), Kunal Rajbhatt
-												(Music), Nevil Thomas (Director), Tanveeii Singh (Lyrics), Pratyaksh
-												Rajbhatt (Drums), Rohan Chawathe , Utkarsh Srivastav & Kunal Rajbhatt
-												(Guitarist) Rohan Chawathe (Bass) Shyamantan Das (Mixing)</p>
-										</div>
-									</div>
-
-								</div>
-								<div class="col-sm-4 col-md-3 col-lg-4">
-									<div class="latest-album-right">
-										<h6>LISTEN DEMO NOW</h6>
-										<div class="latest-album-btn">
-											<a href="media/audio/phir_kitthe.mp3" class="sm2_button"><i></i></a>
-										</div>
-
-									</div>
-								</div>
-								<div class="col-xl-12">
-									<div class="record-player">
-										<div class="player-main">
-											<img src="media/background/record.png" alt="" loading="lazy">
-										</div>
-										<div class="player-main-shade">
-											<img src="media/background/record-shade.png" alt="" loading="lazy">
-										</div>
-										<div class="record-key">
-											<img src="media/background/player-key.png" alt="" loading="lazy">
-										</div>
-									</div>
-
-								</div>
-
-
-
-
-								<div class="bubble-wrap">
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-
-
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-3"></div>
-
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-
-								</div>
-
-								<div class="bubble-wrap-right">
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-
-
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-3"></div>
-
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-1"></div>
-
-									<div class="bubble icon-5"></div>
-
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-1"></div>
-
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-5"></div>
-									<div class="bubble icon-2 "></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-1"></div>
-									<div class="bubble icon-3"></div>
-									<div class="bubble icon-4"></div>
-									<div class="bubble icon-5"></div>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /.latest-album-info -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.tim-container -->
-		</section>
-		<!-- /#about -->
-
-
-
-		<!--==============================-->
-		<!--=        	Latest album         =-->
-		<!--==============================-->
-		<section class="three-d-album">
-			<div class="section-title style-four">
-				<h2>Latest Events</h2>
-				<p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
-					alteration in some injected humour.</p>
-			</div>
-			<div class="more-album">
-
-
-				<a href="#">SEE ALL ALBUMS<i class="fa fa-play" aria-hidden="true"></i></a>
-
-			</div>
-			<div class="three-d-album-width">
-				<div class="row">
-
-					<div class="threed-container-wrapper">
-						<div class="threed-container-inner">
-							<div class="single-3d empty-space">
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/1.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d  empty-space">
-
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/2.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d  empty-space">
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/3.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/4.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/5.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/6.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/7.jpg" alt="" loading="lazy"></a>
-							</div>
-
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/8.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/13.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/10.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d  empty-space">
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/11.jpg" alt="" loading="lazy"></a>
-							</div>
-							<div class="single-3d  empty-space">
-							</div>
-							<div class="single-3d">
-								<a href="#"><img src="media/albumart/12.jpg" alt="" loading="lazy"></a>
-							</div>
-
-							<div class="single-3d  empty-space">
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- /.tim-container -->
-		</section>
-		<!-- /#about -->
-
-
-
-		<!--==============================-->
-		<!--=        	Show schedule        =-->
-		<!--==============================-->
-		<section class="show-archive">
-			<div class="container">
-				<div class="d-flex justify-content-center row">
-					<div class="col-xl-10">
-						<div class="section-title style-five">
-							<h2>PREVIOUS SHOWS</h2>
-							<p>There are many variations of passages of Lorem Ipsum available but the majority.</p>
-						</div>
-						<div class="show-archive-wrapper row no-gutters">
-							<div class="offset-xs-0 offset-sm-4 col-sm-4 col-6">
-								<div class="single-show-archive">
-									<img src="media/album/19.jpg" alt="" loading="lazy">
-									<a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-							<div class="col-6 col-sm-4">
-								<div class="single-show-archive">
-									<img src="media/album/18.jpg" alt="" loading="lazy">
-									<a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-8">
-								<div class="single-show-archive video-archive">
-									<img src="media/album/20.jpg" alt="" loading="lazy">
-									<div class="video-player" style="padding-left: 6%;">
-										<a href="https://www.youtube.com/watch?v=VeEj_vWOQ5E"
-											class="video-btn-three popup-video-btn">
-											<i class="fa fa-play"></i>
-										</a>
-										<div class="video-btn-shade">
-											<i class="fa fa-play"></i>
-										</div>
-										<div class="text">
-											<p>Krishna Pandey Live Band</p>
-											<span>(Corporate Event, Taj Lands End, Bandra)</span>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-sm-4">
-								<div class="single-show-archive">
-									<img src="media/album/21.jpg" alt="" loading="lazy">
-									<a href="#"><i class="fa fa-link" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- /.row -->
-					</div>
-					<!-- /.col-xl -->
-				</div>
-				<!-- /.row -->
-			</div>
-		</section>
-		<!-- /#about -->
-
-		<!--==============================-->
-		<!--=        	Show ticket        =-->
-		<!--==============================-->
-		<section class="section-padding show-archive">
-			<div class="container">
-				<div class="d-flex justify-content-center row">
-					<div class="col-xl-10">
-						<div class="section-title style-four">
-							<h2>UPCOMING Events</h2>
-						</div>
-						<div class="single-show-ticket row no-guters">
-							<div class="col-sm-3 col-md-3 col-lg-3">
-								<div class="date-time">
-									<h6>26</h6>
-									<p>November, 2023</p>
-								</div>
-
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-7">
-								<h5>Sangeet Event</h5>
-								<p>NSCI World, Worli, Mumbai, India</p>
-							</div>
-						</div>
-						<div class="single-show-ticket row no-guters">
-							<div class="col-sm-3 col-md-3 col-lg-3">
-								<div class="date-time">
-									<h6>28</h6>
-									<p>November, 2023</p>
-								</div>
-
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-7">
-								<h5>Sangeet Event</h5>
-								<p>Trident Hotel, Nariman Point, Mumbai</p>
-							</div>
-						</div>
-						<div class="single-show-ticket row no-guters">
-							<div class="col-sm-3 col-md-3 col-lg-3">
-								<div class="date-time">
-									<h6>6</h6>
-									<p>December, 2023</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-7">
-								<h5>Mehendi & Bollywood Night</h5>
-								<p>Bhilwara, Rajasthan, India</p>
-							</div>
-						</div>
-						<div class="single-show-ticket row no-guters">
-							<div class="col-sm-3 col-md-3 col-lg-3">
-								<div class="date-time">
-									<h6>13</h6>
-									<p>December, 2023</p>
-								</div>
-
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-7">
-								<h5>Sangeet Event</h5>
-								<p>Guwahati, India</p>
-							</div>
-						</div>
-
-						<div class="single-show-ticket row no-guters">
-							<div class="col-sm-3 col-md-3 col-lg-3">
-								<div class="date-time">
-									<h6>14</h6>
-									<p>December, 2023</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-7">
-								<h5>Wedding Sangeet Event</h5>
-								<p>The Corrianthans Resort, Pune</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /.latest-album-info -->
-			</div>
-			<!-- /.row -->
-		</section>
-		<!-- /.show-archive -->
-
-
-		<!--============================-->
-		<!--=        	Spotlight          =-->
-		<!--============================-->
-		<section class="section-padding-two wide_line_bg">
-			<div class="container">
-				<div class="d-flex justify-content-center row">
-					<div class="col-xl-10">
-						<div class="section-title style-five">
-							<h2>SPOTLIGHT</h2>
-							<p>There are many variations of passages of Lorem Ipsum available but the majority.</p>
-						</div>
-						<div class="row">
-							<div class="grid-60">
-								<div class="spotlight-inner">
-									<img src="media/album/20.jpg" alt="" loading="lazy">
-									<div class="video-player-three">
-										<a href="https://www.youtube.com/watch?v=VeEj_vWOQ5E"
-											class="video-btn-four popup-video-btn">
-											<i class="fa fa-play"></i>
-										</a>
-										<div class="video-btn-shade">
-											<i class="fa fa-play"></i>
-										</div>
-										<div class="text">
-											<p>Show Stoppers Time</p>
-											<span>(Live in Tokyo, 2017)</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /.col-xl-8 -->
-							<div class="grid-40">
-								<div class="subscribe-two">
-									<div class="section-title style-five">
-										<h2>SUBSCRIBE</h2>
-										<p>There are many variations of passages of Lorem Ipsum available but the
-											majority.</p>
-									</div>
-									<form action="#">
-										<input placeholder="Enter Your Email" type="text">
-										<button type="submit" class="submit">send me</button>
-									</form>
-								</div>
-								<!-- /.subscribe-two -->
-							</div>
-							<!-- /.col-xl-4 -->
-						</div>
-						<!-- /.row -->
-					</div>
-					<!-- /.col-xl- -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /#about -->
-
-
-		<!--==============================-->
-		<!--=        	Footer         	 =-->
-		<!--==============================-->
-
-		<footer id="footer-3">
-			<div class="container">
-				<div class="d-flex justify-content-center row">
-					<div class="col-xl-10">
-						<div class="footer-feed">
-							<div class="section-title style-four">
-								<h2>FROM THE FEED</h2>
-							</div>
-							<ul>
-								<li>
-									<a href="#">
-										<img src="media/albumart/1.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/2.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/6.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/7.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/8.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/9.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/10.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="media/albumart/11.jpg" alt="" loading="lazy">
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="footer-three-bottom">
-							<div class="footer-three-left">
-								<a href="#">
-									<img src="assets/img/logo_5_dark.png" alt="" loading="lazy">
-								</a>
-								<p>There are many variations of passages of Lorem Ipsum available but the majority. We
-									are proud there are many variations of passages of Lorem Ipsum available but the
-									majority of the users does use this.</p>
-							</div>
-							<div class="footer-three-right">
-								<ul class="footer-three-menu">
-									<li><a href="#">Rules</a></li>
-									<li><a href="#">Terms of use</a></li>
-									<li><a href="#">Tickets</a></li>
-									<li><a href="#">policy</a></li>
-								</ul>
-								<div class="footer-social-three">
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-										<li><a href="#"><i class="fa fa-cloud"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fa fa-vine"></i></a></li>
-										<li><a href="#"><i class="fa fa-apple"></i></a></li>
-										<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<!-- /.col-xl- -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</footer>
-		<!-- /#footer -->
-
-
-	</div>
-	<!-- /#site -->
-	<!-- Dependency Scripts -->
-	<script src="dependencies/jquery/jquery.min.js"></script>
-	<script src="dependencies/jquery-ui/jquery-ui.min.js"></script>
-	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-	<script src="dependencies/swiper/js/swiper.min.js"></script>
-	<script src="dependencies/swiperRunner/swiperRunner.min.js"></script>
-	<script src="dependencies/wow/js/wow.min.js"></script>
-	<script src="dependencies/jquery.countdown/jquery.countdown.min.js"></script>
-	<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-	<script src="dependencies/jquery.spinner/js/jquery.spinner.js"></script>
-	<script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="dependencies/masonry-layout/masonry.pkgd.min.js"></script>
-	<script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
-	<script src="dependencies/slick-carousel/js/slick.min.js"></script>
-	<script src="assets/js/headroom.js"></script>
-	<script src="assets/js/soundmanager2.js"></script>
-	<script src="assets/js/mp3-player-button.js"></script>
-	<script src="assets/js/smoke.js"></script>
-	<script src="dependencies/FitText.js/js/jquery.fittext.js"></script>
-	<script src="dependencies/gmap3/js/gmap3.min.js"></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-	<script src='dependencies/tilt.js/js/tilt.jquery.js'></script>
-	<script src='assets/js/parallax.min.js'></script>
-	<!-- Player -->
-	<script src="dependencies/jPlayer/js/jquery.jplayer.min.js"></script>
-	<script src="dependencies/jPlayer/js/jplayer.playlist.min.js"></script>
-	<script src="assets/js/myplaylist.js"></script>
-
-	<!-- Remove It -->
-	<script src="dependencies/colornip/colornip.min.js"></script>
-
-	<!--Google map api -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsBrMPsyNtpwKXPPpG54XwJXnyobfMAIc"></script>
-
-	<!-- Site Scripts -->
-	<script src="assets/js/app.js"></script>
-	<script type="text/javascript">
-    $(document).ready(function(){       
-   $('#myModal').modal('show');
-    }); 
-</script>
-
-
-</body>
-
+				</div> -->
+        <!-- /.tim-container -->
+      </section>
+
+      <!--==============================-->
+      <!--=        	Artist lineup         =-->
+      <!--==============================-->
+      <section class="section-padding-two artist-lineup">
+        <div class="tim-container clearfix">
+          <div class="row">
+            <div class="section-title style-four">
+              <h2>ARTIST LINEUP</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some injected
+                humour.
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-container row"
+            data-swiper-config='{ "loop": true, "prevButton":".swiper-button-prev", "nextButton": ".swiper-button-next", "speed": 700, "autoplay": "5000", "slidesPerView": 6, "spaceBetween": 0, "grabCursor": true,"breakpoints": { "1300": { "slidesPerView": 4 }, "767": { "slidesPerView": 3 }, "500": { "slidesPerView": 1 }}}'
+          >
+            <ul class="artist-line-wrapper swiper-wrapper">
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a1.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Krishna Pandey</h6>
+                  <p>Band: Singer</p>
+                </div>
+              </li>
+
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a2.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Kunal Rajbhatt</h6>
+                  <p>Band: Guitarist</p>
+                </div>
+              </li>
+
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a3.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Pratyaksh Rajbhatt</h6>
+                  <p>Band: Percussion</p>
+                </div>
+              </li>
+
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a4.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Shubham</h6>
+                  <p>Band: DJ Player</p>
+                </div>
+              </li>
+              <li class="artist-single clearfix swiper-slide">
+                <img
+                  src="media/artist/a5.png"
+                  alt=""
+                  loading="lazy"
+                  loading="lazy"
+                />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Aditya</h6>
+                  <p>Band: Keyboard</p>
+                </div>
+              </li>
+
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a2.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Kunal Rajbhatt</h6>
+                  <p>Band: Guitarist</p>
+                </div>
+              </li>
+
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a3.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Pratyaksh Rajbhatt</h6>
+                  <p>Band: Percussion</p>
+                </div>
+              </li>
+
+              <li class="artist-single clearfix swiper-slide">
+                <img src="media/artist/a4.png" alt="" loading="lazy" />
+                <div class="artist-single-content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <h6>Shubham</h6>
+                  <p>Band: DJ Player</p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <!-- /.tim-container -->
+      </section>
+      <!-- /#about -->
+
+      <!--==============================-->
+      <!--=        	Latest release         =-->
+      <!--==============================-->
+      <section class="section-padding latest-relese">
+        <div class="container">
+          <div class="row">
+            <div class="section-title style-four">
+              <h2>LATEST RELEASE</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="col-xl-10" id="moving-player">
+                <div class="row">
+                  <div class="col-sm-8 col-md-9 col-lg-8">
+                    <div class="latest-album-left">
+                      <div class="cover-img">
+                        <img
+                          src="media/album/cover.jpeg"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="albun-details">
+                        <h6>ALBUM INFO</h6>
+                        <p>
+                          Most happening band Krishna Pandey Live recently has
+                          released their debut album called
+                          <span>“PHIR KITTHE”</span>. Officialy the album
+                          released on Apr 25, 2023 in
+                          <span>Book My Singer</span> Studio, Mumbai.
+                        </p>
+                        <p>
+                          The Lineup: Krishna Pandey & Kunal Rajbhatt
+                          (Composition), Kunal Rajbhatt (Music), Nevil Thomas
+                          (Director), Tanveeii Singh (Lyrics), Pratyaksh
+                          Rajbhatt (Drums), Rohan Chawathe , Utkarsh Srivastav &
+                          Kunal Rajbhatt (Guitarist) Rohan Chawathe (Bass)
+                          Shyamantan Das (Mixing)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-4">
+                    <div class="latest-album-right">
+                      <h6>LISTEN DEMO NOW</h6>
+                      <div class="latest-album-btn">
+                        <a href="media/audio/phir_kitthe.mp3" class="sm2_button"
+                          ><i></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="record-player">
+                      <div class="player-main">
+                        <img
+                          src="media/background/record.png"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="player-main-shade">
+                        <img
+                          src="media/background/record-shade.png"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="record-key">
+                        <img
+                          src="media/background/player-key.png"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bubble-wrap">
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-3"></div>
+
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                  </div>
+
+                  <div class="bubble-wrap-right">
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-3"></div>
+
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-1"></div>
+
+                    <div class="bubble icon-5"></div>
+
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-1"></div>
+
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-5"></div>
+                    <div class="bubble icon-2"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-1"></div>
+                    <div class="bubble icon-3"></div>
+                    <div class="bubble icon-4"></div>
+                    <div class="bubble icon-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.latest-album-info -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.tim-container -->
+      </section>
+      <!-- /#about -->
+
+      <!--==============================-->
+      <!--=        	Latest album         =-->
+      <!--==============================-->
+      <section class="three-d-album">
+        <div class="section-title style-four">
+          <h2>Latest Events</h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in some injected humour.
+          </p>
+        </div>
+        <div class="more-album">
+          <a href="#"
+            >SEE ALL ALBUMS<i class="fa fa-play" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="three-d-album-width">
+          <div class="row">
+            <div class="threed-container-wrapper">
+              <div class="threed-container-inner">
+                <div class="single-3d empty-space"></div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/1.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d empty-space"></div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/2.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d empty-space"></div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/3.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/4.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/5.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/6.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/7.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/8.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/13.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/10.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d empty-space"></div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/11.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+                <div class="single-3d empty-space"></div>
+                <div class="single-3d">
+                  <a href="#"
+                    ><img src="media/albumart/12.jpg" alt="" loading="lazy"
+                  /></a>
+                </div>
+
+                <div class="single-3d empty-space"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.tim-container -->
+      </section>
+      <!-- /#about -->
+
+      <!--==============================-->
+      <!--=        	Show schedule        =-->
+      <!--==============================-->
+      <section class="show-archive">
+        <div class="container">
+          <div class="d-flex justify-content-center row">
+            <div class="col-xl-10">
+              <div class="section-title style-five">
+                <h2>PREVIOUS SHOWS</h2>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority.
+                </p>
+              </div>
+              <div class="show-archive-wrapper row no-gutters">
+                <div class="offset-xs-0 offset-sm-4 col-sm-4 col-6">
+                  <div class="single-show-archive">
+                    <img src="media/album/19.jpg" alt="" loading="lazy" />
+                    <a href="#"
+                      ><i class="fa fa-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <div class="single-show-archive">
+                    <img src="media/album/18.jpg" alt="" loading="lazy" />
+                    <a href="#"
+                      ><i class="fa fa-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                  <div class="single-show-archive video-archive">
+                    <img src="media/album/20.jpg" alt="" loading="lazy" />
+                    <div class="video-player" style="padding-left: 6%">
+                      <a
+                        href="https://www.youtube.com/watch?v=VeEj_vWOQ5E"
+                        class="video-btn-three popup-video-btn"
+                      >
+                        <i class="fa fa-play"></i>
+                      </a>
+                      <div class="video-btn-shade">
+                        <i class="fa fa-play"></i>
+                      </div>
+                      <div class="text">
+                        <p>Krishna Pandey Live Band</p>
+                        <span>(Corporate Event, Taj Lands End, Bandra)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="single-show-archive">
+                    <img src="media/album/21.jpg" alt="" loading="lazy" />
+                    <a href="#"
+                      ><i class="fa fa-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.col-xl -->
+          </div>
+          <!-- /.row -->
+        </div>
+      </section>
+      <!-- /#about -->
+
+      <!--==============================-->
+      <!--=        	Show ticket        =-->
+      <!--==============================-->
+      <section class="section-padding show-archive">
+        <div class="container">
+          <div class="d-flex justify-content-center row">
+            <div class="col-xl-10">
+              <div class="section-title style-four">
+                <h2>UPCOMING Events</h2>
+              </div>
+              <div class="single-show-ticket row no-guters">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <div class="date-time">
+                    <h6>26</h6>
+                    <p>November, 2023</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                  <h5>Sangeet Event</h5>
+                  <p>NSCI World, Worli, Mumbai, India</p>
+                </div>
+              </div>
+              <div class="single-show-ticket row no-guters">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <div class="date-time">
+                    <h6>28</h6>
+                    <p>November, 2023</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                  <h5>Sangeet Event</h5>
+                  <p>Trident Hotel, Nariman Point, Mumbai</p>
+                </div>
+              </div>
+              <div class="single-show-ticket row no-guters">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <div class="date-time">
+                    <h6>6</h6>
+                    <p>December, 2023</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                  <h5>Mehendi & Bollywood Night</h5>
+                  <p>Bhilwara, Rajasthan, India</p>
+                </div>
+              </div>
+              <div class="single-show-ticket row no-guters">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <div class="date-time">
+                    <h6>13</h6>
+                    <p>December, 2023</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                  <h5>Sangeet Event</h5>
+                  <p>Guwahati, India</p>
+                </div>
+              </div>
+
+              <div class="single-show-ticket row no-guters">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <div class="date-time">
+                    <h6>14</h6>
+                    <p>December, 2023</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-7">
+                  <h5>Wedding Sangeet Event</h5>
+                  <p>The Corrianthans Resort, Pune</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.latest-album-info -->
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- /.show-archive -->
+
+      <!--============================-->
+      <!--=        	Spotlight          =-->
+      <!--============================-->
+      <section class="section-padding-two wide_line_bg">
+        <div class="container">
+          <div class="d-flex justify-content-center row">
+            <div class="col-xl-10">
+              <div class="section-title style-five">
+                <h2>SPOTLIGHT</h2>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority.
+                </p>
+              </div>
+              <div class="row">
+                <div class="grid-60">
+                  <div class="spotlight-inner">
+                    <img src="media/album/20.jpg" alt="" loading="lazy" />
+                    <div class="video-player-three">
+                      <a
+                        href="https://www.youtube.com/watch?v=VeEj_vWOQ5E"
+                        class="video-btn-four popup-video-btn"
+                      >
+                        <i class="fa fa-play"></i>
+                      </a>
+                      <div class="video-btn-shade">
+                        <i class="fa fa-play"></i>
+                      </div>
+                      <div class="text">
+                        <p>Show Stoppers Time</p>
+                        <span>(Live in Tokyo, 2017)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.col-xl-8 -->
+                <div class="grid-40">
+                  <div class="subscribe-two">
+                    <div class="section-title style-five">
+                      <h2>SUBSCRIBE</h2>
+                      <p>
+                        There are many variations of passages of Lorem Ipsum
+                        available but the majority.
+                      </p>
+                    </div>
+                    <form action="#">
+                      <input placeholder="Enter Your Email" type="text" />
+                      <button type="submit" class="submit">send me</button>
+                    </form>
+                  </div>
+                  <!-- /.subscribe-two -->
+                </div>
+                <!-- /.col-xl-4 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.col-xl- -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#about -->
+
+      <!--==============================-->
+      <!--=        	Footer         	 =-->
+      <!--==============================-->
+
+      <footer id="footer-3">
+        <div class="container">
+          <div class="d-flex justify-content-center row">
+            <div class="col-xl-10">
+              <div class="footer-feed">
+                <div class="section-title style-four">
+                  <h2>FROM THE FEED</h2>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/1.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/2.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/6.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/7.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/8.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/9.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/10.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="media/albumart/11.jpg" alt="" loading="lazy" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-three-bottom">
+                <div class="footer-three-left">
+                  <a href="#">
+                    <img
+                      src="assets/img/logo_5_dark.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </a>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available but the majority. We are proud there are many
+                    variations of passages of Lorem Ipsum available but the
+                    majority of the users does use this.
+                  </p>
+                </div>
+                <div class="footer-three-right">
+                  <ul class="footer-three-menu">
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">policy</a></li>
+                  </ul>
+                  <div class="footer-social-three">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-cloud"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-vine"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-apple"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-xl- -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- /#footer -->
+    </div>
+    <!-- /#site -->
+    <!-- Dependency Scripts -->
+    <script src="dependencies/jquery/jquery.min.js"></script>
+    <script src="dependencies/jquery-ui/jquery-ui.min.js"></script>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dependencies/swiper/js/swiper.min.js"></script>
+    <script src="dependencies/swiperRunner/swiperRunner.min.js"></script>
+    <script src="dependencies/wow/js/wow.min.js"></script>
+    <script src="dependencies/jquery.countdown/jquery.countdown.min.js"></script>
+    <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="dependencies/jquery.spinner/js/jquery.spinner.js"></script>
+    <script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="dependencies/masonry-layout/masonry.pkgd.min.js"></script>
+    <script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="dependencies/slick-carousel/js/slick.min.js"></script>
+    <script src="assets/js/headroom.js"></script>
+    <script src="assets/js/soundmanager2.js"></script>
+    <script src="assets/js/mp3-player-button.js"></script>
+    <script src="assets/js/smoke.js"></script>
+    <script src="dependencies/FitText.js/js/jquery.fittext.js"></script>
+    <script src="dependencies/gmap3/js/gmap3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+    <script src="dependencies/tilt.js/js/tilt.jquery.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <!-- Player -->
+    <script src="dependencies/jPlayer/js/jquery.jplayer.min.js"></script>
+    <script src="dependencies/jPlayer/js/jplayer.playlist.min.js"></script>
+    <script src="assets/js/myplaylist.js"></script>
+
+    <!-- Remove It -->
+    <script src="dependencies/colornip/colornip.min.js"></script>
+
+    <!--Google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsBrMPsyNtpwKXPPpG54XwJXnyobfMAIc"></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+  </body>
 </html>
