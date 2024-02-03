@@ -175,12 +175,12 @@ ul {
   overflow: hidden
 }
 
-#whatsapp-chat,
+.action-button,
 .call-button {
   position: fixed;
   bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-  z-index: 2;
+  z-index: 1000;
   cursor: pointer
 }
 
@@ -772,19 +772,20 @@ ul.products li.product-two .product-description {
   }
 }
 
-#whatsapp-chat {
-  right: 20px;
+.action-button {
+  bottom: 1000px !important;
+  right: 40px;
   background-color: transparent;
   border-radius: 50%
 }
 
-#whatsapp-chat .whatsappImg,
+.action-button,
 .call-button a img {
   zoom: 15%
 }
 
 .call-button {
-  left: 20px;
+  right: 20px;
   background-color: transparent;
   border-radius: 50%
 }
@@ -4010,12 +4011,12 @@ ul.shared-link li:hover a {
     padding-top: 50px
   }
 
-  #whatsapp-chat,
+  .action-button,
   .call-button {
     box-shadow: none
   }
 
-  #whatsapp-chat .whatsappImg,
+  .action-button .whatsappImg,
   .call-button a img {
     width: 70%;
     height: 70%;
@@ -20439,4 +20440,27 @@ ul.products li.product-two .ajax_add_to_cart i {
   .video-container {
     margin-top: 45% !important;
   }
+}
+
+.fixed-button {
+  position: fixed;
+  right: 0px; 
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0px;
+  border-radius: 5px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000 !important;
+}
+
+.fixed-button button {
+  padding: 10px;
+  line-height: 1.2;
+  border-radius: 5px;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
 }
