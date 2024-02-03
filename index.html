@@ -1940,8 +1940,11 @@
     <script src="assets/js/app.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("#myModal").modal("show");
+        setTimeout(function () {
+          $("#myModal").modal("show");
+        }, 10000);
       });
+
 
       function enquire() {
         $("#myModal").modal("show");
