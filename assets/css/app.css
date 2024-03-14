@@ -187,8 +187,7 @@ ul {
   overflow: hidden;
 }
 
-.action-button,
-.call-button {
+.action-button {
   position: fixed;
   bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -810,21 +809,8 @@ ul.products li.product-two .product-description {
   border-radius: 50%;
 }
 
-.action-button,
-.call-button a img {
+.action-button a img {
   zoom: 15%;
-}
-
-.call-button {
-  right: 20px;
-  background-color: transparent;
-  border-radius: 50%;
-}
-
-.call-button a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
 }
 
 .header,
@@ -4489,13 +4475,11 @@ ul.shared-link li:hover a {
     padding-top: 50px;
   }
 
-  .action-button,
-  .call-button {
+  .action-button {
     box-shadow: none;
   }
 
-  .action-button .whatsappImg,
-  .call-button a img {
+  .action-button a img {
     width: 70%;
     height: 70%;
     zoom: 15%;
@@ -21326,4 +21310,69 @@ ul.products li.product-two .ajax_add_to_cart i {
 
 .event-btn:hover {
   background-color: #ff314c;
+}
+
+/* -------------------------------------------
+
+Whatsapp & Call Button
+
+------------------------------------------- */
+#whatsapp-chat {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+#whatsapp-chat .whatsappImg {
+  zoom: 15%;
+}
+
+.call-button {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.call-button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.call-button a img {
+  zoom: 15%;
+}
+
+@media (max-width: 768px) {
+  #whatsapp-chat {
+    box-shadow: none;
+  }
+
+  .call-button {
+    box-shadow: none;
+  }
+
+  #whatsapp-chat .whatsappImg,
+  .call-button a img {
+    width: 70%;
+    height: 70%;
+  }
+
+  #whatsapp-chat .whatsappImg {
+    zoom: 15%;
+  }
+
+  .call-button a img {
+    zoom: 15%;
+  }
 }
