@@ -1,53 +1,53 @@
 .youtube-player {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    margin: 5px;
-    border-radius: 5%;
-    cursor: pointer; /* Add this to make the entire player clickable */
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 5px;
+  border-radius: 5%;
+  cursor: pointer; /* Add this to make the entire player clickable */
 }
 
 .youtube-player iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
 }
 
 .youtube-player img {
-    object-fit: cover;
-    display: block;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    max-width: 100%;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border: none;
-    height: auto;
-    cursor: pointer;
-    /* Remove the hover effect by removing the following lines */
-    /* transition: 0.4s all; */
+  object-fit: cover;
+  display: block;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  /* Remove the hover effect by removing the following lines */
+  /* transition: 0.4s all; */
 }
 
 .youtube-player .play-button {
-    height: 68px; /* Adjust dimensions */
-    width: 68px; /* Adjust dimensions */
-    left: 50%;
-    top: 50%;
-    margin-left: -34px;
-    margin-top: -34px; /* Half of the height and width to center */
-    position: absolute;
-    background: url('https://i.ibb.co/j3jcJKv/yt.png') no-repeat center center; /* Center the play button icon */
-    cursor: pointer;
-    /* Remove the hover effect by removing the following line */
-    opacity: 70%;
+  height: 68px; /* Adjust dimensions */
+  width: 68px; /* Adjust dimensions */
+  left: 50%;
+  top: 50%;
+  margin-left: -34px;
+  margin-top: -34px; /* Half of the height and width to center */
+  position: absolute;
+  background: url("https://i.ibb.co/j3jcJKv/yt.png") no-repeat center center; /* Center the play button icon */
+  cursor: pointer;
+  /* Remove the hover effect by removing the following line */
+  opacity: 70%;
 }
