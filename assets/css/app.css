@@ -21267,6 +21267,8 @@ ul.products li.product-two .ajax_add_to_cart i {
 @media only screen and (max-width: 767px) {
   .video-container {
     margin-top: 45% !important;
+    margin-left: -8%;
+    width: 115%;
   }
 }
 
