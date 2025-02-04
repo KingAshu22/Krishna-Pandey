@@ -21480,6 +21480,18 @@ Hero Section Background Video
     width: 90%; /* Increase width for smaller screens */
     padding: 5px 0;
   }
+
+  .fees {
+    font-size: large;
+  }
+
+  .budget {
+    font-size: xx-large !important;
+  }
+
+  .hurry {
+    font-size: x-large;
+  }
 }
 
 @media (max-width: 576px) {
